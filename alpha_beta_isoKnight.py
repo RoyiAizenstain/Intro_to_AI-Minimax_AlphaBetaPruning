@@ -7,6 +7,7 @@ def alphabeta_max(current_game):
 
 def alphabeta_min(current_game):
     #add code here for alpha-beta
+
     pass
 
 
