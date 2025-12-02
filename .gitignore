@@ -1,0 +1,25 @@
+
+venv/
+env/
+.venv/
+
+
+__pycache__/
+*.pyc
+*.$py.class
+
+
+*.log
+*.sqlite3
+
+
+dist/
+build/
+*.egg-info/
+
+
+.idea/             # JetBrains/PyCharm
+.vscode/           # VS Code
+*.iml              # JetBrains/PyCharm
+
+.DS_Store
