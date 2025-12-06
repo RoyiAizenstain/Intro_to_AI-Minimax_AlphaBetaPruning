@@ -80,4 +80,4 @@ if __name__ == '__main__':
     #play_with_minimax()
     # play_with_alpha_beta()
     play_with_heuristics()
-    # play_with_advanced_heuristics()
+    play_with_advanced_heuristics()
