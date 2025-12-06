@@ -2,8 +2,13 @@ import math
 
 
 def alphabeta_max(current_game):
-    #add code here for alpha-beta
-    pass
+    if current_game.is_terminal():
+        return current_game.get_score(), None
+
+    v = -math.inf
+    best_move = None
+
+
 
 def alphabeta_min(current_game):
     #add code here for alpha-beta
