@@ -1,5 +1,3 @@
-import math
-
 
 import math
 
@@ -38,7 +36,7 @@ def alphabeta_max(current_game):
             # Beta cutoff: MIN already has something <= beta,
             # and since v >= beta, MIN will never choose this branch
             if v >= beta:
-                return v, best_move
+                return v, None
 
             # Update alpha
             alpha = max(alpha, v)
@@ -70,7 +68,7 @@ def alphabeta_max(current_game):
             # Alpha cutoff: MAX already has something >= alpha,
             # and since v <= alpha, MAX will never choose this branch
             if v <= alpha:
-                return v, best_move
+                return v, None
 
             # Update beta
             beta = min(beta, v)
@@ -109,7 +107,7 @@ def alphabeta_min(current_game):
                 best_move = move
 
             if v >= beta:
-                return v, best_move
+                return v, None
 
             alpha = max(alpha, v)
 
@@ -133,7 +131,7 @@ def alphabeta_min(current_game):
                 best_move = move
 
             if v <= alpha:
-                return v, best_move
+                return v, None
 
             beta = min(beta, v)
 
